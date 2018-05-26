@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#clickme").click(function(){
+				$("#demo").css({
+					background: 'green',
+					color: 'white'
+				})
+			})
+		})
+	</script>
+</head>
+<body>
+<div id="demo">this is a dive with no css</div>
+<button id="clickme">set css</button>
+</body>
+</html>

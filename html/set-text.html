@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button#clickme").click(function(){
+				$("#demo").text("<b>this is text content (no html markup)</b>")
+			})
+		})
+	</script>
+</head>
+<body>
+<div id="demo">text will be here</div>
+<button id="clickme">set text</button>
+</body>
+</html>

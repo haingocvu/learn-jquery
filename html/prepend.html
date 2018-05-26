@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("ul").prepend("<li>added item</li>")
+			})
+		})
+	</script>
+</head>
+<body>
+	<button>prepend item</button>
+<ul>
+	<li>item 1</li>
+	<li>item 2</li>
+	<li>item 3</li>
+</ul>
+</body>
+</html>

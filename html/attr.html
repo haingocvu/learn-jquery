@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				alert($("#demo").attr("myattribute"))
+			})
+		})
+	</script>
+</head>
+<body>
+<div id="demo" myattribute="this is my own attribute">this has a "myattribute" attribute</div>
+<button>view myattribute</button>
+</body>
+</html>

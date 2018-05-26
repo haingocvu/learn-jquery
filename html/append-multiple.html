@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var e1 = "<p>this is created with text</p>"; //create with text
+			var e2 = $("<p></p>");
+			e2.text("this is created with jquery"); //create with jquery
+			var e3 = document.createElement("p"); //create with javascript
+			e3.innerHTML = "this is created with javascript";
+			$("button").click(function(){
+				$("body").append(e1, e2, e3);
+			})
+		})
+	</script>
+</head>
+<body>
+<button>click to append</button>
+</body>
+</html>

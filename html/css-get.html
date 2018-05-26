@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#clickme").click(function(){
+				alert($("#demo").css("background-color"))
+			})
+		})
+	</script>
+</head>
+<body>
+<div id="demo" style="background-color: green; color: white;">this is a div with css</div>
+<button id="clickme">get css</button>
+</body>
+</html>

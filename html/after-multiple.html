@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				var e1 = "<div>this is created with text</div>"; //create with text
+				var e2 = $("<div></div>").text("this is created with jquery"); //create with jquery
+				var e3 = document.createElement("div").innerHTML = "this is created with javascript"; //create with javascript
+				$("#demo").after(e1,e2,e3);
+			})
+		})
+	</script>
+</head>
+<body>
+<div id="demo">this is a div</div>
+<button>insert multiple</button>
+</body>
+</html>
